@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#002241">
+<title>Barbouni Seafood</title>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="lang-switch" role="tablist" aria-label="Language">
+      <button class="lang-btn" data-lang="ar" type="button">AR</button>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+      <button class="lang-btn" data-lang="de" type="button">DE</button>
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+      <button class="lang-btn" data-lang="zh" type="button">中文</button>
+    </div>
+
+    <div class="wave-top">
+      <svg viewBox="0 0 500 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,20 C100,45 150,0 250,15 C350,30 400,5 500,20 L500,40 L0,40 Z" fill="#FFFFFF"/>
+      </svg>
+    </div>
+
+    <div class="logo-wrap">
+      <div class="logo-circle">
+        <img src="logo.png" alt="Barbouni Seafood logo">
+      </div>
+    </div>
+
+    <div class="content">
+      <p class="greeting" id="greeting"></p>
+      <h1 data-i18n="name">باربوني للمأكولات البحرية</h1>
+      <p class="en-name" data-i18n="sub">Barbouni Seafood · Hurghada</p>
+
+      <div class="menu-row">
+        <a class="menu-btn" data-platform="menu-food" href="https://online.fliphtml5.com/BarbouniSeafood/ttuo/#p=1" target="_blank" rel="noopener">
+          <span class="menu-icon" aria-hidden="true">🍽️</span>
+          <span data-i18n="foodMenu">منيو الأكل</span>
+        </a>
+        <a class="menu-btn" data-platform="menu-drinks" href="https://online.fliphtml5.com/BarbouniSeafood/Barbouni---drinks-menu-2/#p=1" target="_blank" rel="noopener">
+          <span class="menu-icon" aria-hidden="true">🍹</span>
+          <span data-i18n="drinksMenu">منيو المشروبات</span>
+        </a>
+      </div>
+
+      <p class="prompt" data-i18n="prompt">نتمنى تكون استمتعت بأكلتك معانا 🐟<br>رأيك يفرق معانا كتير، قيّم تجربتك في الخطوات البسيطة دي وسيبلنا انطباعك</p>
+
+      <!-- Step 1: rate each part of the visit -->
+      <div class="rate-section" id="rateSection">
+        <p class="rate-label" data-i18n="rateLabel">قيّم تجربتك معانا</p>
+
+        <div class="room-field">
+          <label class="room-label" for="phoneNumber" data-i18n="phoneLabel">رقم الواتساب (اختياري)</label>
+          <input type="tel" id="phoneNumber" class="room-input" inputmode="tel" data-i18n-ph="phonePlaceholder" placeholder="مثال: 01012345678">
+        </div>
+
+        <div class="rate-categories" id="rateCategories">
+          <div class="rate-row" data-cat="food">
+            <span class="rate-cat-label" data-i18n="catFood">جودة الأكل</span>
+            <div class="stars stars-sm" data-cat="food" role="radiogroup" aria-label="Food quality">
+              <button class="star" type="button" data-value="1" aria-label="1">★</button>
+              <button class="star" type="button" data-value="2" aria-label="2">★</button>
+              <button class="star" type="button" data-value="3" aria-label="3">★</button>
+              <button class="star" type="button" data-value="4" aria-label="4">★</button>
+              <button class="star" type="button" data-value="5" aria-label="5">★</button>
+            </div>
+          </div>
+
+          <div class="rate-row" data-cat="service">
+            <span class="rate-cat-label" data-i18n="catService">الخدمة</span>
+            <div class="stars stars-sm" data-cat="service" role="radiogroup" aria-label="Service">
+              <button class="star" type="button" data-value="1" aria-label="1">★</button>
+              <button class="star" type="button" data-value="2" aria-label="2">★</button>
+              <button class="star" type="button" data-value="3" aria-label="3">★</button>
+              <button class="star" type="button" data-value="4" aria-label="4">★</button>
+              <button class="star" type="button" data-value="5" aria-label="5">★</button>
+            </div>
+          </div>
+
+          <div class="rate-row" data-cat="cleanliness">
+            <span class="rate-cat-label" data-i18n="catCleanliness">النظافة</span>
+            <div class="stars stars-sm" data-cat="cleanliness" role="radiogroup" aria-label="Cleanliness">
+              <button class="star" type="button" data-value="1" aria-label="1">★</button>
+              <button class="star" type="button" data-value="2" aria-label="2">★</button>
+              <button class="star" type="button" data-value="3" aria-label="3">★</button>
+              <button class="star" type="button" data-value="4" aria-label="4">★</button>
+              <button class="star" type="button" data-value="5" aria-label="5">★</button>
+            </div>
+          </div>
+
+          <div class="rate-row" data-cat="atmosphere">
+            <span class="rate-cat-label" data-i18n="catAtmosphere">الجو والمكان</span>
+            <div class="stars stars-sm" data-cat="atmosphere" role="radiogroup" aria-label="Atmosphere">
+              <button class="star" type="button" data-value="1" aria-label="1">★</button>
+              <button class="star" type="button" data-value="2" aria-label="2">★</button>
+              <button class="star" type="button" data-value="3" aria-label="3">★</button>
+              <button class="star" type="button" data-value="4" aria-label="4">★</button>
+              <button class="star" type="button" data-value="5" aria-label="5">★</button>
+            </div>
+          </div>
+
+          <div class="rate-row" data-cat="value">
+            <span class="rate-cat-label" data-i18n="catValue">السعر مقابل الجودة</span>
+            <div class="stars stars-sm" data-cat="value" role="radiogroup" aria-label="Value for money">
+              <button class="star" type="button" data-value="1" aria-label="1">★</button>
+              <button class="star" type="button" data-value="2" aria-label="2">★</button>
+              <button class="star" type="button" data-value="3" aria-label="3">★</button>
+              <button class="star" type="button" data-value="4" aria-label="4">★</button>
+              <button class="star" type="button" data-value="5" aria-label="5">★</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-field">
+          <label class="comment-label" for="generalComment" data-i18n="commentLabel">تعليق أو فكرة لتحسين المكان (اختياري)</label>
+          <textarea id="generalComment" class="feedback-text" data-i18n-ph="commentPlaceholder" placeholder="اكتب رأيك أو فكرتك هنا..."></textarea>
+        </div>
+
+        <p class="rate-validation hidden" id="rateValidation" data-i18n="validationMsg">من فضلك قيّم عنصر واحد على الأقل</p>
+        <button class="continue-btn" id="continueBtn" type="button" data-i18n="continueBtn">متابعة</button>
+      </div>
+
+      <!-- Step 2a: shown for 4-5 stars -->
+      <div class="grid-wrap hidden" id="gridWrap">
+        <div class="divider"><span data-i18n="chooseLabel">اختار منصة التقييم</span></div>
+
+        <div class="grid">
+          <div class="review-item">
+            <a class="review-btn btn-google" data-platform="google" href="https://share.google/BpH4ZrEk4npvbyS8N" target="_blank" rel="noopener">
+              <span class="icon">
+                <svg viewBox="0 0 48 48"><path fill="#fff" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.7-5.7C34.5 6 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11.5 0 19.5-8.1 19.5-19.5 0-1.4-.1-2.7-.4-4z"/></svg>
+              </span>
+              <span>Google</span>
+            </a>
+            <button class="copy-btn" type="button" data-url="https://share.google/BpH4ZrEk4npvbyS8N" aria-label="Copy link">⧉</button>
+          </div>
+
+          <div class="review-item">
+            <a class="review-btn btn-tripadvisor" data-platform="tripadvisor" href="https://www.tripadvisor.com.eg/Restaurant_Review-g297549-d32989038-Reviews-Barbouni_Seafood-Hurghada_Red_Sea_and_Sinai.html" target="_blank" rel="noopener">
+              <span class="icon">
+                <svg viewBox="0 0 24 24"><circle cx="7" cy="13" r="3.4" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="17" cy="13" r="3.4" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="7" cy="13" r="1.3" fill="#fff"/><circle cx="17" cy="13" r="1.3" fill="#fff"/><path d="M2 9.5C4 7 8 6 12 6.7 16 6 20 7 22 9.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span>TripAdvisor</span>
+            </a>
+            <button class="copy-btn" type="button" data-url="https://www.tripadvisor.com.eg/Restaurant_Review-g297549-d32989038-Reviews-Barbouni_Seafood-Hurghada_Red_Sea_and_Sinai.html" aria-label="Copy link">⧉</button>
+          </div>
+
+          <div class="review-item">
+            <a class="review-btn btn-facebook" data-platform="facebook" href="https://www.facebook.com/BARBOUNIHURGHADA/" target="_blank" rel="noopener">
+              <span class="icon">
+                <svg viewBox="0 0 24 24"><path fill="#fff" d="M13.5 21v-8.1h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.5 1.6-1.5h1.7V3.4C16.5 3.4 15.4 3.3 14.2 3.3c-2.6 0-4.4 1.6-4.4 4.5v2h-2.7v3.2h2.7V21h3.7z"/></svg>
+              </span>
+              <span>Facebook</span>
+            </a>
+            <button class="copy-btn" type="button" data-url="https://www.facebook.com/BARBOUNIHURGHADA/" aria-label="Copy link">⧉</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2b: shown after submitting a low average rating -->
+      <div class="feedback-wrap hidden" id="feedbackWrap">
+        <p class="feedback-sent" data-i18n="thanksLow">شكرًا على وقتك، هنتواصل معاك في أقرب وقت 🙏</p>
+      </div>
+
+      <p class="thanks" data-i18n="thanks">شكرًا لثقتك فينا <span class="heart">♥</span> — تقييمك بيساعدنا نقدملك تجربة أحلى</p>
+
+      <div class="utility-row">
+        <button class="util-btn" id="shareBtn" type="button" data-i18n="shareText">مشاركة الصفحة</button>
+        <a class="util-btn util-btn-wa" id="waContactBtn" data-i18n="whatsappText" target="_blank" rel="noopener">تواصل معانا واتساب</a>
+      </div>
+
+      <div class="footer-social">
+        <a class="ig-link" href="https://www.instagram.com/barbounihurghada?igsh=aWNsaDU3c2lnYjli" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="#fff" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="#fff" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff"/></svg>
+          <span data-i18n="igText">تابعنا على إنستجرام</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sand-footer">BARBOUNI SEAFOOD · HURGHADA</div>
+  </div>
+
+  <!-- Floating always-visible WhatsApp button -->
+  <a class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.9c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5C28.7 8.6 23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.1 1.1-4.1-.2-.4c-1.1-1.7-1.7-3.7-1.7-5.7C5.3 9.7 10 5 16 5s10.7 4.7 10.7 10.5S22 25.7 16 25.7zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <!-- QR / share fallback modal -->
+  <div class="qr-modal hidden" id="qrModal">
+    <div class="qr-modal-inner">
+      <button class="qr-close" id="qrCloseBtn" type="button" aria-label="Close">×</button>
+      <img id="qrImg" alt="QR code" width="180" height="180">
+      <button class="util-btn" id="qrCopyBtn" type="button" data-i18n="copyText">نسخ الرابط</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
